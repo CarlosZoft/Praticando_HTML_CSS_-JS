@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+	<title>Form</title>
+	<meta chartset="utf-8">
+	<link href="stylesForm.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>		
+		<form>
+			<fieldset><!-- Grupo de Elementos de Form -->
+				<legend>Formulário Simples</legend>
+				<div><input type="text" name="nome" placeholder="Digite seu Nome"/></div>
+				<div><input type="text" name="E-mail" placeholder="Digite seu E-mail"/></div>
+				<div>
+					<select name="lista">
+						<option disabled selected>Qual sua idade?</option>
+						<option>20</option>
+						<option>25+</option>
+						<option>40+</option>
+					</select>	
+				</div>
+				<h2>Qual sua cidade?</h2>
+				<div class="inputrs">
+					<div>
+						<input type="radio" name="cidade" value=""/><span>Florianópolis</span>
+					</div>
+					<div>
+						<input type="radio" name="cidade" value=""/><span>São Paulo</span>
+					</div>
+					<div>
+						<input type="radio" name="cidade" value=""/><span>Rio de Janeiro</span>
+					</div>
+				</div>
+				<h2>O que você gosta de comer?</h2>
+				<div class="inputrs">
+					<div>
+						<input type="checkbox" name="comida" value=""/><span>Frutas</span>
+					</div>
+					<div>
+						<input type="checkbox" name="comida1" value=""/><span>Fast Food</span>
+					</div>
+					<div>
+						<input type="checkbox" name="comida2" value=""/><span>Salada</span>
+					</div>
+				</div>
+				<div>
+					<textarea placeholder="Possui alguma observação?"></textarea>	
+				</div>
+				<div>
+					<input type="submit" name="acao" value="Enviar"/>
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>
